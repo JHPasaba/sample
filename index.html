@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- auto adjust para kahit anong device magvi-view ng page 
+  -->
+    <meta charset="utf-8">
+<!-- for HTML 5 this is highly encouraged -->
+    <title>HTML Attributes and Links</title>
+  </head>
+    <body>
+      <h2>HTML Attributes</h2>
+<!-- 
+    syntax: attributeName = "value" 
+-->
+      <p align="center">
+        <em>Modifiers of element behaviors</em>
+      </p>
+
+      <h2 id="top">HTML Images</h2>
+      <!-- id attribute assigns a **unique** named identifier to an element 
+
+      css din sya
+      -->
+
+<!-- adds an image using absolute linking
+absolute meaning online repo -->
+
+<!-- 
+  you can put attributes to div and it applies to the entire div
+
+  the div becomes a huge block 
+
+  be mindful of the attributes. dapat applicable to all ang ia-apply mo sa div
+-->
+      <div align="center">
+        <a href="https://place-puppy.com/" target="_blank"><img src="https://place-puppy.com/300x300">
+        </a>
+        <p>
+          <code>
+            &lt;img src="https://place-puppy.com/300x300"/&gt;
+          </code>
+        </p>
+<!--Don't forget src. THE SAUCE-->
+      </div>
+
+      <p>
+        <!-- &lt; html entities yan -->
+        <em>An image can be shown using &lt;img&gt; tag along with its <strong>src</strong> </em>
+      </p>
+<!--
+  img used to include images and creates an inline element
+
+  src attribute accepts URL from an online resource or Local image -->
+
+  <!-- adds an image using relative linking
+      relative linking relative to where the image is retrieved 
+-->
+      <img src="./images/tron_legacy.jpg" height="250" width="250">
+<!-- 
+  dot slash is a good practice to indicate where the file is relatively -->
+
+  <!-- usually this shit is done sa css 
+-->
+
+      <p>
+        <code>
+          &lt;img src="./images/tron_legacy.jpg" height="250" width="250"&gt;
+        </code>
+      </p>
+
+      <p>
+        Valid image extensions are the ff:
+      </p>
+
+      <ol type="i" reversed>
+        <li>png</li>
+        <li>jpg/jpeg</li>
+        <li>bmp</li>
+        <li>svg</li>
+        <li>gif</li>
+        <li>tiff</li>
+        <li>webp</li>
+      </ol>
+<!-- type attribute changes the numberd points of the ol elements
+
+type value can be 1 (default), A, a, I, i 
+
+reversed reverses the value-->
+
+      <!-- think of div as a containter? ? ? -->
+      <h2>HTML Links</h2>
+
+      <h4>Absolute Link</h4>
+      <!-- creates a hyperlink element that links to an outside page -->
+      <a href="https://zuitt.co/">I'm a hyperlink</a>
+<!-- 
+  anchor tag creates hyperlink element. When clicked, will redirect to a different page
+
+  anchors vary: active, hover, etc
+
+  anchors are again sa css
+
+  href = hypertext reference. same with src 
+-->
+
+      <h4>Relative Link</h4>
+
+      <p>Go to <a href="./link.html">link.html</a> page</p>
+
+      <p>Go to <a href="./images/index.html">image/index.html</a> page</p>
+
+      <p>Go to <a href="#top">top</a>.</p>
+      <!-- # means name ng id -->
+
+    </body>
+</html>
